@@ -4,7 +4,7 @@
   "description": "qcl web interface",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
@@ -18,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/kf8a/qcl-js/issues"
   },
-  "homepage": "https://github.com/kf8a/qcl-js"
+  "homepage": "https://github.com/kf8a/qcl-js",
+  "dependencies": {
+    "d3": "^3.5.5",
+    "jquery": "^2.1.4",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.1.2",
+    "react": "^0.13.3",
+    "sass-loader": "^1.0.2",
+    "webpack": "^1.9.8"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "webpack-dev-server": "^1.9.0"
+  }
 }
